@@ -203,7 +203,7 @@ class Node:
         elif config_name == "paxcounter":
             p.set_module_config.paxcounter.CopyFrom(self.moduleConfig.paxcounter)
         elif config_name == "dzhaga":
-            p.set_module_config.dzhaga.CopyFrom(self.moduleConfig.dzhaga)            
+            p.set_module_config.dzhaga.CopyFrom(self.moduleConfig.dzhaga)
         else:
             our_exit(f"Error: No valid config with name {config_name}")
 
