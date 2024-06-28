@@ -977,10 +977,6 @@ class MeshInterface: # pylint: disable=R0902
                 self.localNode.moduleConfig.paxcounter.CopyFrom(
                     fromRadio.moduleConfig.paxcounter
                 )
-            elif fromRadio.moduleConfig.HasField("dzhaga"):
-                self.localNode.moduleConfig.dzhaga.CopyFrom(
-                    fromRadio.moduleConfig.dzhaga
-                )
 
         else:
             logging.debug("Unexpected FromRadio payload")
